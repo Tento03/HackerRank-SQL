@@ -1,4 +1,7 @@
-/*
-Enter your query here.
-*/
-SELECT Count(City) - Count(Distinct(City)) FROM Station;
+SELECT City,LENGTH(City) FROM Station
+ORDER BY LENGTH(City),City
+LIMIT 1;
+
+SELECT City,LENGTH(City) FROM Station
+ORDER BY LENGTH(City) DESC,City
+LIMIT 1;
